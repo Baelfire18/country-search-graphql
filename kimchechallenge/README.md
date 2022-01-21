@@ -1,3 +1,11 @@
+## Comentarios
+
+En caso de no correr el proyecto por que el **linter** no esta perfecto (debería estar perfecto en cualquier caso), crear un archivo `.env` y escribir en el:
+```bash
+DISABLE_ESLINT_PLUGIN=true
+```
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
