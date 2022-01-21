@@ -6,6 +6,7 @@ import { GET_COUNTRIES_BY_CODE } from '../../queries/CountriesByCode';
 
 export default function CountryContainer(props) {
   const { continent, search } = props;
+
   const { data, loading, error } = useQuery(
     GET_COUNTRIES_BY_CODE, { variables: { cont: continent.code } },
   );
