@@ -16,7 +16,7 @@ export default function LanguageContainer(props) {
   }
 
   return (
-    <div>
+    <div className="language">
       {data.languages.map((language) => (
         <CountryByLanguageContainer
           countries={countries}

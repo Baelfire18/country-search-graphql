@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/country.css';
+import '../../styles/containers.css';
 import { useQuery } from '@apollo/react-hooks';
 import Country from '../../components/Country';
 import { GET_COUNTRIES_BY_CODE } from '../../queries/CountriesByCode';
@@ -24,11 +24,11 @@ export default function CountryContainer(props) {
       ? title = true : null));
 
   return (
-    <div>
-      <div>
+    <div className="countries">
+      <p className="title">
         {title
           ? continent.name : null}
-      </div>
+      </p>
       {data.countries.map((country) => (
         <Country
           country={country}

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/country.css';
+import '../../styles/containers.css';
 import Country from '../../components/Country';
 
 export default function CountryByLanguageContainer(props) {
@@ -12,10 +12,10 @@ export default function CountryByLanguageContainer(props) {
       languagex.name === language.name ? title = true : null)));
 
   return (
-    <div>
-      <div>
+    <div className="countries">
+      <p className="title">
         {title ? language.name : null}
-      </div>
+      </p>
       {countries.map(
         (country) => country.languages.map(
           (languagex) => (languagex.name === language.name

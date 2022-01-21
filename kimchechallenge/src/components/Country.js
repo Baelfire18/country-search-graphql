@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/country.css';
+import '../styles/containers.css';
 
 function Country(props) {
   const { country, search } = props;
@@ -7,12 +7,12 @@ function Country(props) {
   if (country.name.toLowerCase().indexOf(search.toLowerCase()) > -1
     && search.length > 0) {
     return (
-      <div>
-        <div>
+      <div className="container">
+        <div className="container-title">
           {`${country.emoji} ${country.name}`}
         </div>
         <br />
-        <div>
+        <div className="container-info">
           <b>Original name:</b>
           {' '}
           {country.native}

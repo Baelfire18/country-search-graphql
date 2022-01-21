@@ -23,11 +23,11 @@ export default function CountryContainer(props) {
       ? title = true : null));
 
   return (
-    <div>
-      <div>
+    <div className="countries">
+      <p className="title">
         {title
           ? continent.name : null}
-      </div>
+      </p>
       {data.countries.map((country) => (
         <Country
           country={country}

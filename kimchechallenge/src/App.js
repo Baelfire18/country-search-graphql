@@ -39,12 +39,12 @@ function App() {
     return (
       <ApolloProvider client={client}>
         <main>
-          <div>
-            <div className="App-header">
+          <div className="Column">
+            <h1 className="App-header">
               Country Search 🌎🔍
-            </div>
+            </h1>
             <SearchBar set={setSearch} />
-            <div>
+            <div className="Option">
               Group By:
               <button
                 type="button"

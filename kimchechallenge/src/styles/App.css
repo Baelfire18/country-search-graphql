@@ -41,3 +41,33 @@
     transform: rotate(360deg);
   }
 }
+
+.Option {
+  width: 100%;
+  margin: auto;
+  float: left;
+  justify-content: center;
+  font-weight: 500;
+  margin-bottom: 5%;
+}
+
+.Option button {
+  background-color: #97d0d8;
+  margin: 0 10%;
+  border: 1px solid black;
+  color: black; 
+  padding: 2% 4%; 
+  cursor: pointer;
+  float: Center; 
+  border-radius: 8px;
+}
+
+.Option .active {
+  background-color: #4558c7;
+  color: white;
+}
+
+.Option button:hover {
+  background-color: #838ab2;
+  color: white;
+}

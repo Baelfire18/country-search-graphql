@@ -16,7 +16,7 @@ export default function ContinentContainer(props) {
   }
 
   return (
-    <div>
+    <div className="country">
       {data.continents.map((continent) => (
         <CountryContainer
           language=""
