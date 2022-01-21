@@ -17,10 +17,14 @@ module.exports = {
   plugins: [
     'react',
   ],
+  ignorePatterns: ["src/App.test.js",
+    "src/serviceWorker.js",
+    "src/index.js"],
   rules: {
     'func-names': 'off',
     'react/prop-types': 'off',
     'react/function-component-definition': 'off',
+    'no-return-assign': 'off',
     'import/extensions': [
       'error',
       'ignorePackages',
