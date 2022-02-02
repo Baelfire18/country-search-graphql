@@ -1,6 +1,8 @@
 # Country Search React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and was made based on [Kimche's Challenge](https://github.com/KimcheChile).
+App: <https://country-search-graphql.netlify.app/>
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), was made based on [Kimche's Challenge](https://github.com/KimcheChile) and it is a non-profit proyect.
 
 It is basically country searcher using [this GrapthQL node](https://countries.trevorblades.com/).
 
