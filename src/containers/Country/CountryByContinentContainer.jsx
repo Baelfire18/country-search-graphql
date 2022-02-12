@@ -4,7 +4,7 @@ import { useQuery } from '@apollo/react-hooks';
 import Country from '../../components/Country';
 import { GET_COUNTRIES_BY_CODE } from '../../queries/CountriesByCode';
 
-export default function CountryContainer(props) {
+export default function CountryByContinentContainer(props) {
   const { continent, search } = props;
 
   const { data, loading, error } = useQuery(
@@ -21,7 +21,7 @@ export default function CountryContainer(props) {
 
   data.countries.map((country) => (
     country.name.toLowerCase().indexOf(search.toLowerCase()) > -1
-    && search.length > 0
+    // && search.length > 0
       ? title = true : null));
 
   return (

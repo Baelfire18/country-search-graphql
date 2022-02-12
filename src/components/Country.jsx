@@ -5,7 +5,8 @@ function Country(props) {
   const { country, search } = props;
 
   if (country.name.toLowerCase().indexOf(search.toLowerCase()) > -1
-    && search.length > 0) {
+  // && search.length > 0
+  ) {
     return (
       <div className="container">
         <div className="container-title">

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useQuery } from '@apollo/react-hooks';
-import CountryContainer from './Country/CountryByContinentContainer';
+import CountryByContinentContainer from './Country/CountryByContinentContainer';
 import { GET_CONTINENTS } from '../queries/Continents';
 
 export default function ContinentContainer(props) {
@@ -18,7 +18,7 @@ export default function ContinentContainer(props) {
   return (
     <div className="country">
       {data.continents.map((continent) => (
-        <CountryContainer
+        <CountryByContinentContainer
           language=""
           continent={continent}
           search={search}

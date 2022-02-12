@@ -8,7 +8,7 @@ export default function CountryByLanguageContainer(props) {
 
   countries.map((country) => (
     country.name.toLowerCase().indexOf(search.toLowerCase()) > -1
-    && search.length > 0
+    // && search.length > 0
     && country.languages.map((languagex) => (
       languagex.name === language.name ? title = true : null))));
 
